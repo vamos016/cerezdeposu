@@ -3,64 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ürünler</title>
+<title>Çerez Deposu | Ürünler</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="topbar"><span>🔥 Bayrama özel kampanya • 1000₺ üzeri ücretsiz kargo • Günlük taze paketleme</span></div>
+
 <nav class="nav">
 <a class="logo" href="index.html">Çerez Deposu</a>
-
 <div class="menu">
 <a href="index.html">Ana Sayfa</a>
 <a href="urunler.html">Ürünler</a>
 <a href="sepet.html">Sepet</a>
 <a href="odeme.html">Ödeme</a>
+<a href="iletisim.html">İletişim</a>
+<button class="icon-btn" id="darkBtn">🌙</button>
+<a class="cart-pill" href="sepet.html">Sepet <span id="cartCount">0</span></a>
 </div>
 </nav>
 
 <section class="section">
-
 <div class="title">
 <h2>Ürünler</h2>
+<p>Kategoriye göre filtrele, sepete ekle.</p>
 </div>
 
-<div class="grid">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&w=900&q=80">
-
-<div class="card-body">
-<h3>Antep Fıstığı</h3>
-<p>Özel kavrulmuş taze ürün.</p>
-<div class="price">₺---</div>
-
-<a class="btn btn-dark" href="sepet.html">
-Sepete Ekle
-</a>
-</div>
+<div class="filters">
+<button class="filter active" data-cat="all">Tümü</button>
+<button class="filter" data-cat="fistik">Fıstık</button>
+<button class="filter" data-cat="karisik">Karışık</button>
+<button class="filter" data-cat="badem">Badem</button>
+<button class="filter" data-cat="kaju">Kaju</button>
+<button class="filter" data-cat="findik">Fındık</button>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1615485500704-8e990f9900f7?auto=format&fit=crop&w=900&q=80">
-
-<div class="card-body">
-<h3>Karışık Kuruyemiş</h3>
-<p>Özel premium karışım.</p>
-<div class="price">₺---</div>
-
-<a class="btn btn-dark" href="sepet.html">
-Sepete Ekle
-</a>
-</div>
-</div>
-
-</div>
+<div class="grid" id="productGrid"></div>
 </section>
 
-<footer>
-© 2026 Çerez Deposu
-</footer>
+<a class="floating-wa" href="https://wa.me/905000000000" target="_blank">WhatsApp</a>
 
+<footer>© 2026 Çerez Deposu. Tüm hakları saklıdır.</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
