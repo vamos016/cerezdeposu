@@ -3,41 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sepet</title>
+<title>Çerez Deposu | Sepet</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="topbar"><span>🔥 Bayrama özel kampanya • 1000₺ üzeri ücretsiz kargo • Günlük taze paketleme</span></div>
+
 <nav class="nav">
 <a class="logo" href="index.html">Çerez Deposu</a>
+<div class="menu">
+<a href="index.html">Ana Sayfa</a>
+<a href="urunler.html">Ürünler</a>
+<a href="sepet.html">Sepet</a>
+<a href="odeme.html">Ödeme</a>
+<a href="iletisim.html">İletişim</a>
+<button class="icon-btn" id="darkBtn">🌙</button>
+<a class="cart-pill" href="sepet.html">Sepet <span id="cartCount">0</span></a>
+</div>
 </nav>
 
 <section class="section">
-
 <div class="title">
 <h2>Sepetim</h2>
+<p>Adet artır, azalt veya ödeme sayfasına geç.</p>
 </div>
 
-<div class="card">
-<div class="card-body">
-
-<h3>Karışık Kuruyemiş</h3>
-<div class="price">₺---</div>
+<div class="panel">
+<div id="cartRows"></div>
+<div class="total" id="cartTotal">Toplam: ₺0</div>
 
 <br>
 
-<a class="btn btn-primary" href="odeme.html">
-Ödemeye Geç
-</a>
-
+<a class="btn btn-primary" href="odeme.html">Ödemeye Geç</a>
+<a class="btn btn-dark" href="urunler.html">Alışverişe Devam Et</a>
 </div>
-</div>
-
 </section>
 
-<footer>
-© 2026 Çerez Deposu
-</footer>
+<a class="floating-wa" href="https://wa.me/905000000000" target="_blank">WhatsApp</a>
 
+<footer>© 2026 Çerez Deposu. Tüm hakları saklıdır.</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
