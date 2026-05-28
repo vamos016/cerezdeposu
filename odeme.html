@@ -3,46 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ödeme</title>
+<title>Çerez Deposu | Ödeme</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="topbar"><span>🔥 Bayrama özel kampanya • 1000₺ üzeri ücretsiz kargo • Günlük taze paketleme</span></div>
+
 <nav class="nav">
 <a class="logo" href="index.html">Çerez Deposu</a>
+<div class="menu">
+<a href="index.html">Ana Sayfa</a>
+<a href="urunler.html">Ürünler</a>
+<a href="sepet.html">Sepet</a>
+<a href="odeme.html">Ödeme</a>
+<a href="iletisim.html">İletişim</a>
+<button class="icon-btn" id="darkBtn">🌙</button>
+<a class="cart-pill" href="sepet.html">Sepet <span id="cartCount">0</span></a>
+</div>
 </nav>
 
 <section class="section">
-
 <div class="title">
 <h2>Ödeme</h2>
-<p>Kapıda ödeme ve havale seçenekleri.</p>
+<p>Bilgileri doldur, siparişi WhatsApp üzerinden onayla.</p>
 </div>
 
-<div class="card">
-<div class="card-body">
+<div class="panel">
 
-<input type="text" placeholder="Ad Soyad">
-<br><br>
+<div class="pay-box">
+<div class="pay-option">
+<b>Kapıda Ödeme</b>
+<span>Teslimatta ödeme.</span>
+</div>
 
-<input type="text" placeholder="Telefon">
-<br><br>
+<div class="pay-option">
+<b>Havale / EFT</b>
+<span>Sipariş sonrası IBAN bilgisi.</span>
+</div>
 
-<input type="text" placeholder="Adres">
-<br><br>
-
-<a class="btn btn-primary" href="#">
-Siparişi Tamamla
-</a>
-
+<div class="pay-option">
+<b>WhatsApp Onay</b>
+<span>Sepet otomatik mesaj olur.</span>
 </div>
 </div>
 
+<div class="form-grid">
+<input id="name" type="text" placeholder="Ad Soyad">
+<input id="phone" type="tel" placeholder="Telefon">
+</div>
+
+<input id="address" type="text" placeholder="Teslimat Adresi">
+
+<div class="form-grid">
+<select id="pay">
+<option>Kapıda Ödeme</option>
+<option>Havale / EFT</option>
+</select>
+
+<input id="note" type="text" placeholder="Sipariş Notu">
+</div>
+
+<button class="btn btn-primary" onclick="sendOrder()">Siparişi WhatsApp'tan Onayla</button>
+
+</div>
 </section>
 
-<footer>
-© 2026 Çerez Deposu
-</footer>
+<a class="floating-wa" href="https://wa.me/905000000000" target="_blank">WhatsApp</a>
 
+<footer>© 2026 Çerez Deposu. Tüm hakları saklıdır.</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
