@@ -3,51 +3,108 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Çerez Deposu</title>
+<title>Çerez Deposu | Ana Sayfa</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="topbar"><span>🔥 Bayrama özel kampanya • 1000₺ üzeri ücretsiz kargo • Günlük taze paketleme</span></div>
+
 <nav class="nav">
 <a class="logo" href="index.html">Çerez Deposu</a>
-
 <div class="menu">
 <a href="index.html">Ana Sayfa</a>
 <a href="urunler.html">Ürünler</a>
 <a href="sepet.html">Sepet</a>
 <a href="odeme.html">Ödeme</a>
+<a href="iletisim.html">İletişim</a>
+<button class="icon-btn" id="darkBtn">🌙</button>
+<a class="cart-pill" href="sepet.html">Sepet <span id="cartCount">0</span></a>
 </div>
 </nav>
 
 <section class="hero">
 <div class="hero-box">
-
-<span class="badge">
-Günlük Taze • Özel Paketleme
-</span>
-
-<h1>
-Taptaze çerezler kapınıza gelsin.
-</h1>
-
-<p>
-Çerez Deposu seçilmiş kaliteli kuruyemişleri modern paketleme ile sunar.
-</p>
-
-<a class="btn btn-primary" href="urunler.html">
-Ürünleri İncele
-</a>
-
-<a class="btn btn-outline" href="odeme.html">
-Ödeme Sayfası
-</a>
-
+<span class="badge">Günlük Taze • Premium Paketleme</span>
+<h1>Taptaze çerezler kapınıza gelsin.</h1>
+<p>Çerez Deposu; seçilmiş kuruyemiş, çerez ve özel karışımları hızlı sipariş sistemiyle sunar.</p>
+<a class="btn btn-primary" href="urunler.html">Ürünleri İncele</a>
+<a class="btn btn-outline" href="odeme.html">Ödeme Seçenekleri</a>
 </div>
 </section>
 
-<footer>
-© 2026 Çerez Deposu
-</footer>
+<section class="section">
+<div class="title">
+<h2>Popüler Ürünler</h2>
+<p>En çok tercih edilen çerez çeşitleri.</p>
+</div>
+<div class="grid" id="productGrid"></div>
+</section>
 
+<section class="section dark-section">
+<div class="title">
+<h2>Neden Çerez Deposu?</h2>
+<p>Güven veren alışveriş deneyimi.</p>
+</div>
+
+<div class="grid">
+<div class="feature">
+<h3>Günlük Taze Ürün</h3>
+<p>Ürünler siparişe göre özenle hazırlanır.</p>
+</div>
+
+<div class="feature">
+<h3>WhatsApp Sipariş</h3>
+<p>Sipariş detayları hızlıca onaylanır.</p>
+</div>
+
+<div class="feature">
+<h3>Toplu Alım</h3>
+<p>İşletme ve özel alımlarda avantajlı fiyat.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="title">
+<h2>Müşteri Yorumları</h2>
+<p>Güven veren sosyal kanıt alanı.</p>
+</div>
+
+<div class="grid">
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>“Ürünler çok taze geldi, paketleme de gayet iyiydi.”</p>
+<b>Ayşe K.</b>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>“Karışık kuruyemiş kalitesi beklediğimden daha iyi.”</p>
+<b>Mehmet T.</b>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>“WhatsApp üzerinden hızlıca sipariş verdim.”</p>
+<b>Elif A.</b>
+</div>
+</div>
+</section>
+
+<div class="popup" id="popup">
+<div class="popup-box">
+<button class="close" id="closePopup">×</button>
+<h2>🎁 İlk Siparişe Özel</h2>
+<p>WhatsApp üzerinden yaz, güncel kampanyaları öğren.</p>
+<a class="btn btn-primary" href="urunler.html">Ürünlere Git</a>
+</div>
+</div>
+
+<a class="floating-wa" href="https://wa.me/905000000000" target="_blank">WhatsApp</a>
+
+<footer>© 2026 Çerez Deposu. Tüm hakları saklıdır.</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
