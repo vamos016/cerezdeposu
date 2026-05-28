@@ -57,3 +57,93 @@ footer{text-align:center;padding:26px;background:#1b100b;color:#d8b98a}
 @keyframes up{from{opacity:0;transform:translateY(35px)}to{opacity:1;transform:translateY(0)}}
 @keyframes marquee{from{transform:translateX(70vw)}to{transform:translateX(-100vw)}}
 @media(max-width:760px){.nav{padding:15px 5%;align-items:flex-start;gap:12px}.menu{gap:11px;font-size:14px}.section{padding:55px 6%}.cart-row{grid-template-columns:1fr}.total{text-align:left}}
+.payment-card{
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:25px;
+background:var(--card);
+border:1px solid var(--line);
+border-radius:30px;
+padding:32px;
+box-shadow:var(--shadow);
+max-width:1050px;
+margin:auto;
+}
+
+.badge-dark{
+display:inline-block;
+background:#2b1b12;
+color:#f5c76b;
+padding:10px 16px;
+border-radius:999px;
+font-weight:900;
+margin-bottom:18px;
+}
+
+.payment-left h3,
+.payment-right h3{
+font-size:28px;
+margin-bottom:18px;
+}
+
+.pay-list{
+list-style:none;
+margin:20px 0;
+}
+
+.pay-list li{
+padding:12px 0;
+border-bottom:1px solid var(--line);
+font-weight:800;
+}
+
+.big-price{
+font-size:46px;
+font-weight:950;
+color:#8b4f19;
+margin:22px 0 10px;
+}
+
+.small-note,
+.secure-text{
+color:var(--muted);
+line-height:1.6;
+font-size:14px;
+}
+
+.pay-method{
+border:2px solid var(--brand);
+background:var(--bg);
+border-radius:20px;
+padding:22px;
+margin-bottom:20px;
+}
+
+.pay-method b{
+display:block;
+font-size:20px;
+margin-bottom:8px;
+}
+
+.pay-method span{
+color:var(--muted);
+line-height:1.5;
+}
+
+.pay-button{
+display:block;
+text-align:center;
+width:100%;
+margin:12px 0;
+}
+
+@media(max-width:760px){
+.payment-card{
+grid-template-columns:1fr;
+padding:22px;
+}
+
+.big-price{
+font-size:38px;
+}
+}
