@@ -8,7 +8,9 @@
 </head>
 <body>
 
-<div class="topbar"><span>🔥 Bayrama özel kampanya • 1000₺ üzeri ücretsiz kargo • Günlük taze paketleme</span></div>
+<div class="topbar">
+  <span>🔥 Bayrama özel kampanya • 1000₺ üzeri ücretsiz kargo • Günlük taze paketleme</span>
+</div>
 
 <nav class="nav">
 <a class="logo" href="index.html">Çerez Deposu</a>
@@ -33,12 +35,63 @@
 </div>
 </section>
 
+<section class="section campaign-section">
+<div class="title">
+<h2>🔥 Günün Kampanyası</h2>
+<p>Kampanya bitmeden siparişini oluştur.</p>
+</div>
+
+<div class="campaign-box">
+<h3>5 KG Karışık Kuruyemiş Paketi</h3>
+<p>Fındık, kaju, badem, ceviz ve Antep fıstığı karışık özel paket.</p>
+<div class="countdown" id="countdown">Kampanya süresi hesaplanıyor...</div>
+<div class="stock-warning">⚠️ Stokta son 7 paket kaldı</div>
+<a class="btn btn-primary" href="odeme.html">Hemen Sipariş Ver</a>
+</div>
+</section>
+
 <section class="section">
 <div class="title">
 <h2>Popüler Ürünler</h2>
 <p>En çok tercih edilen çerez çeşitleri.</p>
 </div>
 <div class="grid" id="productGrid"></div>
+</section>
+
+<section class="section trust-section">
+<div class="title">
+<h2>Güvenli Alışveriş</h2>
+<p>Sipariş verirken aklında soru kalmasın.</p>
+</div>
+
+<div class="grid">
+<div class="feature">
+<h3>✅ Günlük Taze Paketleme</h3>
+<p>Ürünler siparişe göre özenle hazırlanır.</p>
+</div>
+
+<div class="feature">
+<h3>🚚 Hızlı Kargo Hazırlığı</h3>
+<p>Siparişlerin kısa sürede hazırlanıp kargoya verilir.</p>
+</div>
+
+<div class="feature">
+<h3>💬 WhatsApp Destek</h3>
+<p>Sipariş öncesi ve sonrası hızlı destek alabilirsin.</p>
+</div>
+
+<div class="feature">
+<h3>📦 Sağlam Paketleme</h3>
+<p>Ürünler zarar görmeyecek şekilde özenle paketlenir.</p>
+</div>
+</div>
+
+<div class="shipping-progress">
+<p>🎁 Ücretsiz kargo için sepetini 1000₺ üzerine tamamla.</p>
+<div class="progress-bar">
+<div class="progress-fill">Avantaja az kaldı</div>
+</div>
+</div>
 </section>
 
 <section class="section dark-section">
@@ -67,7 +120,7 @@
 
 <section class="section">
 <div class="title">
-<h2>Müşteri Yorumları</h2>
+<h2>⭐ Müşteri Yorumları</h2>
 <p>Güven veren sosyal kanıt alanı.</p>
 </div>
 
@@ -92,6 +145,54 @@
 </div>
 </section>
 
+<section class="section how-section">
+<div class="title">
+<h2>🛒 Nasıl Sipariş Verilir?</h2>
+<p>3 adımda kolay sipariş.</p>
+</div>
+
+<div class="grid">
+<div class="feature">
+<h3>1. Ürünü Seç</h3>
+<p>İstediğin ürünü veya kampanya paketini sepete ekle.</p>
+</div>
+
+<div class="feature">
+<h3>2. Bilgilerini Gir</h3>
+<p>Adres ve ödeme tercihini kolayca tamamla.</p>
+</div>
+
+<div class="feature">
+<h3>3. WhatsApp’a Gönder</h3>
+<p>Sipariş özetin WhatsApp üzerinden bize ulaşsın.</p>
+</div>
+</div>
+</section>
+
+<section class="section faq-section">
+<div class="title">
+<h2>❓ Sık Sorulan Sorular</h2>
+<p>Merak edilenler.</p>
+</div>
+
+<div class="grid">
+<div class="feature">
+<h3>Kargo ne zaman çıkar?</h3>
+<p>Sipariş yoğunluğuna göre en kısa sürede hazırlanır.</p>
+</div>
+
+<div class="feature">
+<h3>Kapıda ödeme var mı?</h3>
+<p>Kapıda ödeme seçeneği varsa kargo maliyeti daha yüksek olabilir.</p>
+</div>
+
+<div class="feature">
+<h3>Ürünler taze mi?</h3>
+<p>Ürünler günlük ve özenli paketleme anlayışıyla hazırlanır.</p>
+</div>
+</div>
+</section>
+
 <div class="popup" id="popup">
 <div class="popup-box">
 <button class="close" id="closePopup">×</button>
@@ -104,6 +205,148 @@
 <a class="floating-wa" href="https://wa.me/905000000000" target="_blank">WhatsApp</a>
 
 <footer>© 2026 Çerez Deposu. Tüm hakları saklıdır.</footer>
+
+<style>
+.campaign-section{
+background:linear-gradient(135deg,#fff7ed,#ffffff);
+}
+
+.campaign-box{
+max-width:700px;
+margin:0 auto;
+background:#fff;
+padding:30px;
+border-radius:24px;
+box-shadow:0 15px 40px rgba(0,0,0,.12);
+text-align:center;
+border:1px solid #f3d7bd;
+}
+
+.campaign-box h3{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.countdown{
+font-size:21px;
+font-weight:800;
+color:#d00000;
+margin:18px 0;
+}
+
+.stock-warning{
+background:#fff1f1;
+color:#c1121f;
+padding:10px 15px;
+border-radius:12px;
+font-weight:800;
+margin-bottom:18px;
+display:inline-block;
+}
+
+.trust-section{
+background:#fafafa;
+}
+
+.shipping-progress{
+max-width:650px;
+margin:35px auto 0;
+text-align:center;
+font-weight:700;
+}
+
+.progress-bar{
+width:100%;
+background:#e5e5e5;
+border-radius:50px;
+overflow:hidden;
+height:32px;
+margin-top:12px;
+}
+
+.progress-fill{
+width:68%;
+height:100%;
+background:linear-gradient(135deg,#ff7a00,#ffb703);
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:800;
+font-size:14px;
+}
+
+.how-section{
+background:#fff7ed;
+}
+
+.faq-section .feature{
+text-align:left;
+}
+
+.feature,.review,.campaign-box{
+transition:.25s ease;
+}
+
+.feature:hover,.review:hover,.campaign-box:hover{
+transform:translateY(-6px);
+}
+
+.floating-wa{
+position:fixed;
+right:18px;
+bottom:18px;
+z-index:9999;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+font-weight:900;
+text-decoration:none;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.floating-wa:hover{
+transform:scale(1.05);
+}
+
+@media(max-width:768px){
+.campaign-box h3{
+font-size:22px;
+}
+
+.countdown{
+font-size:17px;
+}
+
+.floating-wa{
+right:12px;
+bottom:12px;
+padding:12px 16px;
+}
+}
+</style>
+
+<script>
+function updateCountdown(){
+const countdown = document.getElementById("countdown");
+if(!countdown) return;
+
+const now = new Date();
+const end = new Date();
+end.setHours(23,59,59,999);
+
+const diff = end - now;
+const h = Math.floor(diff / 1000 / 60 / 60);
+const m = Math.floor((diff / 1000 / 60) % 60);
+const s = Math.floor((diff / 1000) % 60);
+
+countdown.innerText = "⏳ Kampanya bugün bitiyor: " + h + " saat " + m + " dk " + s + " sn";
+}
+
+setInterval(updateCountdown,1000);
+updateCountdown();
+</script>
 
 <script src="script.js"></script>
 </body>
